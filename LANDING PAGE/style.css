@@ -1,0 +1,191 @@
+/* Reset some default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Body style */
+body {
+  line-height: 1.6;
+  color: #333;
+  background: #f9f9f9;
+}
+
+/* Navbar / Header */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 50px;
+  background: #2c3e50;
+  color: #fff;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+header .logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: #f1c40f;
+}
+
+header nav ul {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+}
+
+header nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+header nav ul li a:hover {
+  color: #f1c40f;
+}
+
+/* Hero Section */
+.hero {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background: linear-gradient(to right, #3498db, #2ecc71);
+  color: white;
+  padding: 0 20px;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 12px 25px;
+  background: #f1c40f;
+  color: #333;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 30px;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.btn:hover {
+  background: #fff;
+  transform: scale(1.05);
+}
+
+/* Features Section */
+#features {
+  padding: 80px 50px;
+  text-align: center;
+  background: #fff;
+}
+
+#features h2 {
+  font-size: 2rem;
+  margin-bottom: 50px;
+  color: #2c3e50;
+}
+
+.feature-box {
+  display: inline-block;
+  width: 250px;
+  margin: 20px;
+  padding: 20px;
+  background:white;
+  border-radius: 12px;
+  box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+} 
+
+.feature-box:hover {
+  transform: translateY(-10px);
+}
+
+.feature-box h3 {
+  color: #3498db;
+  margin-bottom: 15px;
+}
+
+/* About Section */
+#about {
+  padding: 80px 50px;
+  background: #f4f6f7;
+  text-align: center;
+}
+
+#about h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #2c3e50;
+}
+
+#about p {
+  max-width: 800px;
+  margin: auto;
+  font-size: 1.1rem;
+  color: #555;
+  line-height: 1.8;
+}
+
+/* Contact Section */
+#contact {
+  padding: 80px 50px;
+  text-align: center;
+  background: #fff;
+}
+
+#contact h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #2c3e50;
+}
+
+#contact p {
+  font-size: 1.1rem;
+  margin: 10px 0;
+}
+
+/* Footer */
+footer {
+  background: #2c3e50;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+  margin-top: 30px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+  }
+
+  header nav ul {
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 10px;
+  }
+
+  .hero h1 {
+    font-size: 2rem;
+  }
+
+  .feature-box {
+    width: 90%;
+  }
+}
